@@ -3,21 +3,15 @@
 
 if BOARD_BS_LP_60
 
-config BOARD
-	default "bs_lp_60"
-
 config ZMK_KEYBOARD_NAME
 	default "bs_lp_60"
 
-if USB
+if USB_DEVICE_STACK
 
 config USB_NRFX
 	default y
 
-config USB_DEVICE_STACK
-	default y
-
-endif # USB
+endif # USB_DEVICE_STACK
 
 config BT_CTLR
 	default BT
